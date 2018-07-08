@@ -19,11 +19,11 @@
           </nav>
         </header>
 
-
+<!-- MAIN TEXT -->
         <section class="container">
           <div class="main-txt col-md-9 font-weight-bold"><p>Location de salle de réunion, séminaire, formation ou conférence sur Bird Office</p></div>
           <div class="txt col-md-8"><p>Bird Office est le service permettant aux entreprises de réserver simplement le lieu idéal pour leurs réunions, séminaires, conférences ou formations.</p></div>
-         
+<!-- SEARCH BAR -->
           <section class="search-bar">
             <div class="d-flex align-items-center input-group col-md-12">
               <img src="../assets/search-icon.png" alt="search-icon">
@@ -33,7 +33,7 @@
           </section>
         </section>
         <hr>
-
+<!-- USAGE -->
         <section class="container">
             <h2 class="lorem-title col-md-5 font-weight-bold">Sed finibus nisl nec imperdiet porta</h2>
             <p class="lorem-txt col-md-12 font-weight-light">Nunc in leo ac diam congue rutrum. Suspendisse vel justo euismod, tincidunt sapien ac, convallis tellus. 
@@ -73,12 +73,12 @@
                 <p class="font-weight-bold">Usage</p>
               </div>
             </section> 
-
+<!-- LOREM TEXT -->
             <h2 class="lorem-title col-md-5 font-weight-bold">Sed finibus nisl nec imperdiet porta</h2>
             <p class="lorem-txt col-md-12 font-weight-light">Nunc in leo ac diam congue rutrum. Suspendisse vel justo euismod, tincidunt sapien ac, convallis tellus. 
               Nam sed ante bibendum, placerat est eget, finibus massa. Aliquam vitae lobortis nulla. 
               Quisque sit amet tortor ut orci facilisis scelerisque vitae et diam.</p> 
-
+<!-- COUNTRY -->
               <section class="row grid d-flex ">
               <div class="country d-flex col-md-3">
                 <img src="../assets/flag.png" alt="flag">
@@ -113,7 +113,7 @@
                 <p class="font-weight-bold">France</p>
               </div>
             </section> 
-
+<!-- DISTRICT -->
           <h2 class="lorem-title col-md-5 font-weight-bold">Sed finibus nisl nec imperdiet porta</h2>
             <p class="lorem-txt col-md-12 font-weight-light">Nunc in leo ac diam congue rutrum. Suspendisse vel justo euismod, tincidunt sapien ac, convallis tellus. 
               Nam sed ante bibendum, placerat est eget, finibus massa. Aliquam vitae lobortis nulla. 
@@ -164,6 +164,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+// HEADER
 header{
   height: 80px;
   margin-bottom: 80px;
@@ -175,7 +176,7 @@ header{
      }
   nav {
     z-index: 1;
-    
+// RESPONSIVE NAVBAR
     ul {
         @media screen and (max-width:991px) {
           position: absolute;
@@ -241,6 +242,7 @@ header{
     }
 }
 
+// SEARCH BAR
 .search-bar {
     border-radius:8px;
     border: 1px solid #c1c7cd;
@@ -270,6 +272,8 @@ header{
 hr {
   margin: 80px 0 80px 0;
 }
+
+// LOREM TEXT
 
 .container {
   .lorem-title {
@@ -315,6 +319,8 @@ hr {
       }
   }
 
+// COUNTRY
+
   .grid {
       justify-content: space-between;
      .country {
@@ -335,6 +341,7 @@ hr {
       }
   }
 
+//DISTRICT
   .bird-office-district {
   @media screen and (max-width: 991px){
       flex-direction: column;
@@ -353,6 +360,8 @@ hr {
       }
     }
   }
+
+  // DISTRICT IN PARIS
 
   .district-in-paris  {
     @media screen and (max-width: 991px){
